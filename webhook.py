@@ -150,6 +150,6 @@ def health():
 
 # ─── PUNTO DE ENTRADA ────────────────────────────────────────
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", 5000))
+    port = int(os.getenv("PORT", 8080))
     print(f"🚀 Webhook iniciando en puerto {port}")
     app.run(host="0.0.0.0", port=port, debug=False)
